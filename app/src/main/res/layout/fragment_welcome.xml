@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our app!" 
+        android:textSize="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/subtitle_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We're glad you're here!"
+        android:layout_gravity="center"
+        />
+
+
+
+    <Button
+        android:id="@+id/navigate_to_instructions_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:elevation="12dp"
+        android:fontFamily="@font/armata"
+        android:text="Instructions"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+  </layout>
