@@ -18,4 +18,5 @@
         \nTo get started,
        \n   take a look at our instructions screen where you can learn how to navigate our app and
          \n make the most of all the features we have to offer. Happy shopping!</string>
+    <string name="log_out">Log out</string>
 </resources>

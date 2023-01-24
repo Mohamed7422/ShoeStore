@@ -16,7 +16,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
+        <!-- I have used the linear layout here as it's a basic User Interface -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,8 +30,7 @@
                     app:defaultNavHost="true"
                     app:navGraph="@navigation/main_navigation" />
 
+
         </LinearLayout>
-
-
 
 </layout>

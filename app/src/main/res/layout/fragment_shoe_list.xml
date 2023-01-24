@@ -12,6 +12,11 @@
             type="com.udacity.shoestore.models.ShoeListViewModel" />
 
     </data>
+
+    <!-- I have used the constraint layout here as it's having some complex
+      views here needed to be on some position
+     and on that case constraint is better than linear
+   -->
 <androidx.constraintlayout.widget.ConstraintLayout
 
     android:layout_width="match_parent"
@@ -64,15 +69,7 @@
     />
 
 
-    <Button
-        android:id="@+id/log_out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log Out"
-        android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

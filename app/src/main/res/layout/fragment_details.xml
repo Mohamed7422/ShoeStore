@@ -2,7 +2,19 @@
 <layout>
 
 
+    <!-- I have used the linear layout here as it's a basic User Interface
+        and all view here is vertical so I have not found better than linear
 
+     -->
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe"/>
+
+        <variable
+            name="shoeListVieuModel"
+            type="com.udacity.shoestore.models.ShoeListViewModel" />
+    </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +31,9 @@
     <EditText
         android:id="@+id/shoe_name_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@={shoe.name}"
+        />
 
     <TextView
         android:id="@+id/shoe_company_label"
@@ -30,7 +44,9 @@
     <EditText
         android:id="@+id/shoe_company_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@={shoe.company}"
+        />
 
     <TextView
         android:id="@+id/shoe_size_label"
@@ -43,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:text="@={`` + shoe.size}"
         />
 
     <TextView
@@ -54,13 +71,16 @@
     <EditText
         android:id="@+id/shoe_description_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@={shoe.description}"
+        />
 
     <Button
         android:id="@+id/cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel"
+        android:onClick="@{()->shoeListVieuModel.onCancel()}"
         />
 
     <Button

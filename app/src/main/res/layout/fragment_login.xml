@@ -4,6 +4,11 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
+
+    <!-- I have used the linear layout here as it's a basic User Interface
+       and all view here is vertical so I have not found better than linear
+
+    -->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

@@ -9,6 +9,10 @@ class ShoeListViewModel : ViewModel() {
 
 
     private lateinit var shoeList: MutableList<Shoe>
+    //create mutable livedata for cancelEvent
+    private val _eventCancel = MutableLiveData<Boolean>()
+    val eventCancel : LiveData<Boolean>
+    get() = _eventCancel
 
     init {
         initShoeList()
@@ -66,6 +70,14 @@ class ShoeListViewModel : ViewModel() {
     fun addShoe(shoe: Shoe) {
         _list.value = shoeList.plus(shoe).toMutableList()
     }
+
+    fun onCancel(){
+        _eventCancel.value = true
+    }
+    fun onCancelComplete() {
+        _eventCancel.value  = false
+    }
+
 
 
 }
